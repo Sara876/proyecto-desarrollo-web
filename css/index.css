@@ -278,10 +278,7 @@ display: grid;
     transition: all 2s ease-in-out;
 }
  
-#caja-8 #botonregistro:hover {
-transform: scale(2,2);
 
-}
 
 
 /** PIE DE PÁGINA **/
