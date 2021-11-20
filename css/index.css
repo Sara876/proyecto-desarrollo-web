@@ -92,18 +92,19 @@ nav div ul li a:hover {
 
 /** CAJA 3 - Fotos Principales **/
 
-.caja-3 {
+#carouselExampleControls {
+
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: 40px;
+    margin: 0px; 
+    width: 1000px;
+    height: 1000px;
 }
-.caja-3  img {
-   
-    width: 500px;
-    height: 500px;
+    
 
-}
+
+
 
 
 /** CAJA 4 - Nav- Fotos que llevan a las secciones **/

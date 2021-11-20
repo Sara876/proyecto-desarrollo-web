@@ -3273,14 +3273,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-secondary {
-  color: #6c757d;
-  border-color: #6c757d;
+  color: #3d0814;
+  font-weight: bolder;
+  background-color: #e8dbc5;
+  border-color: #e8dbc5;
 }
+
 .btn-outline-secondary:hover {
-  color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
+  color: #3d0814;
+  font-weight: bolder;
+  background-color: #F0DDDA;
+  border-color: #F0DDDA;
 }
+
 .btn-check:focus + .btn-outline-secondary, .btn-outline-secondary:focus {
   box-shadow: 0 0 0 0.25rem rgba(108, 117, 125, 0.5);
 }
