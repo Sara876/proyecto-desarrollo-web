@@ -29,7 +29,10 @@
         height: 300px;
        
        }
-                             
+                     
+       .d-flex btn {
+           color: #696d7d;
+       }
                              
                              /****** INDEX *****/ 
 
