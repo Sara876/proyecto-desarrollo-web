@@ -1,7 +1,7 @@
 {
   "name": "proyecto-desarrollo-web",
   "version": "1.0.0",
-  "description": "",
+  "description": "proyecto sobre el desarrollo de una página web para una empresa de ropa y moda femenina",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
