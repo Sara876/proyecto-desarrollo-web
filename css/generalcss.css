@@ -1,5 +1,10 @@
 @charset "UTF-8";
 /****** INDEX *****/
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
 .subtitulo-1 {
   display: flex;
   display: inline-block;
@@ -47,11 +52,14 @@ nav div ul li a:hover {
 
 /** CAJA 4 - Nav- Fotos que llevan a las secciones **/
 .caja-4 {
+  max-width: 100%;
   margin: 70px;
   display: flex;
   justify-content: space-evenly;
   display: grid;
-  grid-template-areas: "subtitulo-1 subtitulo-1 subtitulo-1 subtitulo-1" "fotosporcategoria1 fotosporcategoria2 fotosporcategoria3 fotosporcategoria4" "fotosporcategoria1 fotosporcategoria2 fotosporcategoria3 fotosporcategoria4"; }
+  grid-template-areas: "subtitulo-1 subtitulo-1 subtitulo-1 subtitulo-1"
+ "fotosporcategoria1 fotosporcategoria2 fotosporcategoria3 fotosporcategoria4"
+ "fotosporcategoria1 fotosporcategoria2 fotosporcategoria3 fotosporcategoria4"; }
 
 .subtitulo-1 {
   grid-area: subtitulo-1;
@@ -92,7 +100,8 @@ nav div ul li a:hover {
 .caja-5 {
   background-color: #e6e6e6;
   display: grid;
-  grid-template-areas: "subtitulo-1" "fotonovedades";
+  grid-template-areas: "subtitulo-1"
+ "fotonovedades";
   justify-items: center; }
 
 .subtitulo-1 {

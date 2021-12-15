@@ -1,0 +1,29 @@
+
+
+//Colores Letras//
+
+$color-lyricsnav: rgb(245, 239, 239);
+
+
+
+//practicando operaciones 
+
+$width: 3000px ;
+$height: 50px; 
+
+
+
+@mixin organizacion-texto {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+@mixin pics-galeria {
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+margin: 50px;
+}

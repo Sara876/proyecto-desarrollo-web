@@ -1,0 +1,88 @@
+ 
+ @import "index";
+ @import "variables/variables";
+ 
+ 
+ 
+ 
+ /****** PAGUINAS: ACCESORIOS + TOPS + FALDAS + VESTIDOS*****/       
+       
+ .titulos-pag-nav {
+    color: rgb(48, 46, 46);
+    text-decoration-line: underline;
+    text-decoration-color: $color-lyricsnav;
+    font-family: 'Fjalla One', sans-serif;
+    margin: 50px;
+    @include organizacion-texto;
+}
+
+
+                     
+.galeriafotos {
+   @include pics-galeria;
+}
+
+.galeriafotos img {
+
+width: $width/10;
+height: $height*6;
+
+}
+             
+.d-flex btn {
+   color: #696d7d;
+}
+                     
+
+
+.titulo-2 {
+   color: #410602;
+   text-decoration-line:none;
+   font-family: 'Fjalla One', sans-serif;
+   text-align: center;
+   font-size: 30px;
+   font-weight: 100;
+   font-style: normal;
+   }
+ 
+   .galeriafotos li h5 {
+     margin: 15px;
+     display: flex;
+     justify-content: center;
+   }
+ 
+   .caja-productos {
+     margin: 70px;
+     display: flex;
+     justify-content: space-evenly;
+     display: grid;
+     grid-template-areas: "titulo-2 titulo-2 titulo-2 "
+    "fotosproducto1 fotosproducto2 fotosproducto3"
+    "fotosproducto1 fotosproducto2 fotosproducto3"; }
+ 
+    .titulo-2 {
+     grid-area: titulo-2;
+    }
+ 
+    .galeriafotos li  a {
+     text-decoration: none;
+     color: black;
+     display: flex;
+     justify-content: center;
+     transition: all 0.6s ease-in;
+     border-radius: 20px;
+     background-color: white;
+     border: solid 1.7px black;
+     width: 150px;
+     justify-content: space-evenly;
+     margin: 30px;
+    }
+ 
+    .galeriafotos li  a:hover{
+     transform: scale(1.1,1.1);
+     color: rgb(177, 68, 228);
+     font-weight: bold;
+     
+ 
+    }
+
