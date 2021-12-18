@@ -82,9 +82,11 @@
     /** CAJA 3 - Foto Principal **/
     
     #fotonu {
-       margin: 0px 10px 0px 0px;
+       text-align: center;
+       @include pics-galeria;
+       
       img {
-      width: 1450.1px;
+      width: 1580px;
       height: 600px;
     }
   }
@@ -174,17 +176,25 @@
     "subtitulo-1"
     "fotonovedades";
     justify-items: center;
-    }
+    
     
     .subtitulo-1 {
     grid-area: subtitulo-1;
+    padding: 10px;
     }
     
     #fotonovedades {
     grid-area: fotonovedades;
     margin: 20px;
     
+    img {
+      width: 800px;
+      height: 600px;
+      padding: 20px;
     }
+    }
+
+  }
     
     
     
@@ -273,28 +283,88 @@
     
     /** CAJA 7 - VISTO RECIENTEMENTE **/
     
-    .caja-7 {
+     
+.caja-7 {
      background-color:$gris;
-     margin: 30px 0px;
-
-     .subtitulo-1 {
+      margin: 30px 0px;
+      display: flex;
+      display: grid;
+      grid-template-areas: 
+      "subtitulo-1 subtitulo-1 subtitulo-1 "
+      "visto1 visto2 visto3 "
+      "visto1 visto2 visto3 ";
+      
+      
+      
+      .subtitulo-1 {
+      grid-area: subtitulo-1;
+      background-color:$gris;
+      margin: 30px 0px;
       @include organizacion-basica;
-
+      font-size: 30px;
+      margin: 0px;
+      height: 20px;
+      }
+    }
+      
+      .visto1 {
+      grid-area: visto1;
       }
 
-      img {
-         width: 400px;
-         height: 400px;
-         margin: 30px;
-         }
-    }
-    
-    
-    
-    #fotosvistos {
-    @include organizacion-space;
-    flex-wrap: wrap;
-    }
+      .visto2 {
+        grid-area: visto2;
+        }
+
+        .visto3 {
+          grid-area: visto3;
+          }
+      
+      
+      
+      .picvisto{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin: 0px;
+        position: relative;
+        
+
+        img { width: 300px;
+              height: 300px;
+              margin: 40px; 
+           }
+  
+        h5 { text-decoration: none;
+          @include organizacion-basica;
+            color: rgb(33, 5, 78);
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: all 1s ease-in ;
+           }
+
+           a {
+            text-decoration: none;
+            color: $negro;
+            @include organizacion-basica;
+            transition: all 0s ease-in;
+            border-radius: 20px;
+            background-color: $blanco;
+            border: solid 1.7px $negro;
+            justify-content: space-evenly;
+            width: 150px;
+            margin: 30px;
+           }
+      }
+      
+  
+      
+  
+        a:hover {color: $negro;
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+      
+     
     
     
     /** CAJA 8 - NEWSLETTER **/
@@ -314,9 +384,20 @@
         justify-content: end;
         border-radius: 20px;
         transition: all 2s ease-in-out;
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
     }
    }
     
+   #formulario {
+    justify-content: center;
+    margin: 50px;
+
+
+}
         
     #caja-8 {
        #botonregistro:hover {
