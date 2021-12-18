@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /****** INDEX *****/
 .subtitulo-1 {
-  display: flex;
   display: inline-block;
+  display: flex;
   justify-content: center; }
 
 .blanco {
@@ -22,27 +22,35 @@
   margin: 0%;
   border: 0px;
   display: flex;
-  justify-content: space-evenly; }
-
-.navegador-principal {
-  display: inline-block;
-  margin: 12px; }
+  justify-content: center; }
+  .caja-2 .piclogo {
+    padding: 0px;
+    border: 10px; }
+    .caja-2 .piclogo img {
+      width: 120px; }
+  .caja-2 .navegador-principal {
+    display: inline-block;
+    margin: 40px 30px 15px 30px;
+    text-align: center; }
+  .caja-2 .piccomprar a {
+    width: 10px;
+    height: 80px; }
 
 nav a {
   text-decoration: none;
   transition: all 3s ease-in;
-  color: black; }
+  color: black;
+  font-weight: bold; }
 
 nav a:hover {
   text-decoration-line: underline; }
 
-/** CAJA 3 - Fotos Principales **/
-#fotoprincipal {
+/** CAJA 3 - Foto Principal **/
+#fotonu {
   margin: 0px 10px 0px 0px; }
-
-  #fotoprincipal img {
-  height: 600px;}
-
+  #fotonu img {
+    width: 1450.1px;
+    height: 600px; }
 
 /** CAJA 4 - Nav- Fotos que llevan a las secciones **/
 .caja-4 {
@@ -50,9 +58,7 @@ nav a:hover {
   display: flex;
   justify-content: space-evenly;
   display: grid;
-  grid-template-areas: "subtitulo-1 subtitulo-1 subtitulo-1 subtitulo-1"
- "fotosporcategoria1 fotosporcategoria2 fotosporcategoria3 fotosporcategoria4"
- "fotosporcategoria1 fotosporcategoria2 fotosporcategoria3 fotosporcategoria4"; }
+  grid-template-areas: "subtitulo-1 subtitulo-1 subtitulo-1 subtitulo-1" "fotosporcategoria1 fotosporcategoria2 fotosporcategoria3 fotosporcategoria4" "fotosporcategoria1 fotosporcategoria2 fotosporcategoria3 fotosporcategoria4"; }
 
 .subtitulo-1 {
   grid-area: subtitulo-1;
@@ -73,16 +79,22 @@ nav a:hover {
   grid-area: fotosporcategoria4; }
 
 .piccategoria img {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   margin: 40px; }
 
 .piccategoria a {
   text-decoration: none;
   display: flex;
   justify-content: center;
-  color: #3d0814;
-  font-weight: bold; }
+  color: #410602;
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: all 0s ease-in; }
+
+.piccategoria a:hover {
+  color: #410602;
+  font-size: 1.55rem; }
 
 .navegador-2 {
   margin: 12px;
@@ -93,8 +105,7 @@ nav a:hover {
 .caja-5 {
   background-color: #e6e6e6;
   display: grid;
-  grid-template-areas: "subtitulo-1"
- "fotonovedades";
+  grid-template-areas: "subtitulo-1" "fotonovedades";
   justify-items: center; }
 
 .subtitulo-1 {
@@ -105,19 +116,64 @@ nav a:hover {
   margin: 20px; }
 
 /** CAJA 6 - RECOMENDADOS PARA TI**/
-.caja-6 .subtitulo-1 {
+.caja-6 {
+  margin: 70px;
   display: flex;
-  justify-content: center; }
+  justify-content: space-evenly;
+  display: grid;
+  grid-template-areas: "subtitulo-1 subtitulo-1 subtitulo-1 " "recomendado1 recomendado2 recomendado3 " "recomendado1 recomendado2 recomendado3 "; }
 
-.caja-6 img {
-  width: 400px;
-  height: 400px; }
+.subtitulo-1 {
+  grid-area: subtitulo-1;
+  display: flex;
+  justify-content: center;
+  font-size: 30px; }
 
-#fotosrecomendado {
+.recomendado1 {
+  grid-area: recomendado1; }
+
+.recomendado2 {
+  grid-area: recomendado2; }
+
+.recomendado3 {
+  grid-area: recomendado3; }
+
+.picrecomendados {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin: 40px; }
+  transition: all 0s ease-in; }
+  .picrecomendados img {
+    width: 300px;
+    height: 300px;
+    margin: 40px; }
+  .picrecomendados h5 {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: #e451b8;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all 1s ease-in; }
+  .picrecomendados a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    transition: all 0s ease-in;
+    border-radius: 20px;
+    background-color: white;
+    border: solid 1.7px black;
+    justify-content: space-evenly;
+    width: 150px;
+    margin: 30px; }
+
+.picrecomendados:hover {
+  border: solid 2px lightblue;
+  font-weight: bold; }
+  .picrecomendados:hover a:hover {
+    color: black;
+    font-size: 1.2rem; }
 
 /** CAJA 7 - VISTO RECIENTEMENTE **/
 .caja-7 {
@@ -129,7 +185,7 @@ nav a:hover {
   .caja-7 img {
     width: 400px;
     height: 400px;
-    padding: 40PX; }
+    margin: 30px; }
 
 #fotosvistos {
   display: flex;
@@ -138,8 +194,8 @@ nav a:hover {
 
 /** CAJA 8 - NEWSLETTER **/
 #caja-8 {
-  background-color: #3d0814;
-  border: solid 45px #3d0814;
+  background-color: #410602;
+  border: solid 45px #410602;
   color: beige;
   margin: 30px 0px;
   display: flex;
@@ -213,9 +269,6 @@ footer {
   color: #b144e4;
   font-weight: bold; }
 
-.d-flex {
-  color: #696d7d; }
-
 .titulo-2 {
   color: #410602;
   text-decoration-line: none;
@@ -231,6 +284,4 @@ footer {
   display: flex;
   justify-content: space-evenly;
   display: grid;
-  grid-template-areas: "titulo-2 titulo-2 titulo-2 "
- "fotosproducto1 fotosproducto2 fotosproducto3"
- "fotosproducto1 fotosproducto2 fotosproducto3"; }
+  grid-template-areas: "titulo-2 titulo-2 titulo-2 " "fotosproducto1 fotosproducto2 fotosproducto3" "fotosproducto1 fotosproducto2 fotosproducto3"; }
