@@ -20,69 +20,61 @@
                      
 .galeriafotos {
    @include pics-galeria;
+
+   img { 
+      width: $width/10;
+      height: $height*6;
+
+   }
+
+   h5 {
+      margin: 15px;
+      @include organizacion-basica;
+
+    }
+
+    a {
+      text-decoration: none;
+      color: $negro;
+      @include organizacion-basica;
+      transition: all 0.6s ease-in;
+      border-radius: 20px;
+      background-color: $blanco;
+      border: solid 1.7px $negro;
+      width: 150px;
+      justify-content: space-evenly;
+      margin: 30px;
+     }
 }
 
-.galeriafotos img {
+.galeriafotos {
+  a:hover{
+   transform: scale(1.1,1.1);
+   color: rgb(177, 68, 228);
+   font-weight: bold; 
+  } 
+}   
 
-width: $width/10;
-height: $height*6;
-
-}
-             
-.d-flex btn {
-   color: #696d7d;
-}
                      
 
 
 .titulo-2 {
-   color: #410602;
+   color: $vinotinto;
    text-decoration-line:none;
    font-family: 'Fjalla One', sans-serif;
-   text-align: center;
-   font-size: 30px;
-   font-weight: 100;
-   font-style: normal;
+   @include organizacion-texto;
+   grid-area: titulo-2;
    }
  
-   .galeriafotos li h5 {
-     margin: 15px;
-     display: flex;
-     justify-content: center;
-   }
  
    .caja-productos {
      margin: 70px;
-     display: flex;
-     justify-content: space-evenly;
+     @include organizacion-space;
      display: grid;
      grid-template-areas: "titulo-2 titulo-2 titulo-2 "
     "fotosproducto1 fotosproducto2 fotosproducto3"
     "fotosproducto1 fotosproducto2 fotosproducto3"; }
  
-    .titulo-2 {
-     grid-area: titulo-2;
-    }
- 
-    .galeriafotos li  a {
-     text-decoration: none;
-     color: black;
-     display: flex;
-     justify-content: center;
-     transition: all 0.6s ease-in;
-     border-radius: 20px;
-     background-color: white;
-     border: solid 1.7px black;
-     width: 150px;
-     justify-content: space-evenly;
-     margin: 30px;
-    }
- 
-    .galeriafotos li  a:hover{
-     transform: scale(1.1,1.1);
-     color: rgb(177, 68, 228);
-     font-weight: bold;
-     
- 
-    }
+    
+    
 

@@ -1,1 +1,236 @@
 @charset "UTF-8";
+/****** INDEX *****/
+.subtitulo-1 {
+  display: flex;
+  display: inline-block;
+  justify-content: center; }
+
+.blanco {
+  border: solid 30px white; }
+
+.gris {
+  border: solid 30px #e6e6e6; }
+
+/** Principio de página **/
+.caja-1 {
+  display: flex;
+  justify-content: center; }
+
+/** Navegador Principal **/
+.caja-2 {
+  background-color: #e8dbc5;
+  margin: 0%;
+  border: 0px;
+  display: flex;
+  justify-content: space-evenly; }
+
+.navegador-principal {
+  display: inline-block;
+  margin: 12px; }
+
+nav a {
+  text-decoration: none;
+  transition: all 3s ease-in;
+  color: black; }
+
+nav a:hover {
+  text-decoration-line: underline; }
+
+/** CAJA 3 - Fotos Principales **/
+#fotoprincipal {
+  margin: 0px 10px 0px 0px; }
+
+  #fotoprincipal img {
+  height: 600px;}
+
+
+/** CAJA 4 - Nav- Fotos que llevan a las secciones **/
+.caja-4 {
+  margin: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  display: grid;
+  grid-template-areas: "subtitulo-1 subtitulo-1 subtitulo-1 subtitulo-1"
+ "fotosporcategoria1 fotosporcategoria2 fotosporcategoria3 fotosporcategoria4"
+ "fotosporcategoria1 fotosporcategoria2 fotosporcategoria3 fotosporcategoria4"; }
+
+.subtitulo-1 {
+  grid-area: subtitulo-1;
+  display: flex;
+  justify-content: center;
+  font-size: 30px; }
+
+.fotosporcategoria1 {
+  grid-area: fotosporcategoria1; }
+
+.fotosporcategoria2 {
+  grid-area: fotosporcategoria2; }
+
+.fotosporcategoria3 {
+  grid-area: fotosporcategoria3; }
+
+.fotosporcategoria4 {
+  grid-area: fotosporcategoria4; }
+
+.piccategoria img {
+  width: 300px;
+  height: 300px;
+  margin: 40px; }
+
+.piccategoria a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  color: #3d0814;
+  font-weight: bold; }
+
+.navegador-2 {
+  margin: 12px;
+  list-style: none;
+  align-items: center; }
+
+/** CAJA 5 - NOVEDADES **/
+.caja-5 {
+  background-color: #e6e6e6;
+  display: grid;
+  grid-template-areas: "subtitulo-1"
+ "fotonovedades";
+  justify-items: center; }
+
+.subtitulo-1 {
+  grid-area: subtitulo-1; }
+
+#fotonovedades {
+  grid-area: fotonovedades;
+  margin: 20px; }
+
+/** CAJA 6 - RECOMENDADOS PARA TI**/
+.caja-6 .subtitulo-1 {
+  display: flex;
+  justify-content: center; }
+
+.caja-6 img {
+  width: 400px;
+  height: 400px; }
+
+#fotosrecomendado {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 40px; }
+
+/** CAJA 7 - VISTO RECIENTEMENTE **/
+.caja-7 {
+  background-color: #e6e6e6;
+  margin: 30px 0px; }
+  .caja-7 .subtitulo-1 {
+    display: flex;
+    justify-content: center; }
+  .caja-7 img {
+    width: 400px;
+    height: 400px;
+    padding: 40PX; }
+
+#fotosvistos {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+
+/** CAJA 8 - NEWSLETTER **/
+#caja-8 {
+  background-color: #3d0814;
+  border: solid 45px #3d0814;
+  color: beige;
+  margin: 30px 0px;
+  display: flex;
+  justify-content: space-evenly; }
+  #caja-8 #botonregistro {
+    background-color: #fdf5e6;
+    border: solid 30px #fdf5e6;
+    color: black;
+    justify-content: end;
+    border-radius: 20px;
+    transition: all 2s ease-in-out; }
+
+#caja-8 #botonregistro:hover {
+  transform: scale(1.1, 1.1); }
+
+/** PIE DE PÁGINA **/
+footer {
+  background-color: #696d7d; }
+
+/** CAJA 9 - NAV-Final de Página **/
+.caja-9 {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding: 20px; }
+
+/** CAJA 10 - Derechos reservados **/
+.caja-10 {
+  display: flex;
+  justify-content: center; }
+
+/****** PAGUINAS: ACCESORIOS + TOPS + FALDAS + VESTIDOS*****/
+.titulos-pag-nav {
+  color: #302e2e;
+  text-decoration-line: underline;
+  text-decoration-color: #f5efef;
+  font-family: 'Fjalla One', sans-serif;
+  margin: 50px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 100;
+  font-style: normal; }
+
+.galeriafotos {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 50px; }
+  .galeriafotos img {
+    width: 300px;
+    height: 300px; }
+  .galeriafotos h5 {
+    margin: 15px;
+    display: flex;
+    justify-content: center; }
+  .galeriafotos a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    transition: all 0.6s ease-in;
+    border-radius: 20px;
+    background-color: white;
+    border: solid 1.7px black;
+    width: 150px;
+    justify-content: space-evenly;
+    margin: 30px; }
+
+.galeriafotos a:hover {
+  transform: scale(1.1, 1.1);
+  color: #b144e4;
+  font-weight: bold; }
+
+.d-flex {
+  color: #696d7d; }
+
+.titulo-2 {
+  color: #410602;
+  text-decoration-line: none;
+  font-family: 'Fjalla One', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 100;
+  font-style: normal;
+  grid-area: titulo-2; }
+
+.caja-productos {
+  margin: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  display: grid;
+  grid-template-areas: "titulo-2 titulo-2 titulo-2 "
+ "fotosproducto1 fotosproducto2 fotosproducto3"
+ "fotosproducto1 fotosproducto2 fotosproducto3"; }

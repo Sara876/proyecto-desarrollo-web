@@ -3,29 +3,25 @@
 
 
  .subtitulo-1 {
-    display: flex;
+   
     display: inline-block;
+    display: flex;
     justify-content: center;
-    
     }
     
     .blanco {
-    border: solid 30px white;
+    border: solid 30px $blanco;
     }
     
     .gris {
-    border: solid 30px #e6e6e6;
+    border: solid 30px $gris;
     }
       
     
     /** Principio de página **/
     
     .caja-1 
-    {display: flex;
-    justify-content: center;
-    
-    
-    }
+    {   @include organizacion-basica;}
     
     /** Navegador Principal **/
     
@@ -34,8 +30,7 @@
     background-color: #e8dbc5;
     margin: 0%;
     border: 0px;
-    display: flex;
-    justify-content: space-evenly;
+    @include organizacion-space;
     
     }
     
@@ -44,52 +39,50 @@
     margin: 12px;
     }
     
-    nav div ul li a { 
-    text-decoration: none;
-    transition: all 3s ease-in ;
-    color: black;
+    nav {
+       a {
+         text-decoration: none;
+         transition: all 3s ease-in ;
+         color: $negro;
+      }
     }
     
-    nav div ul li a:hover {
-    text-decoration-line: underline;
+    nav {
+      a:hover { 
+         text-decoration-line: underline;
+      }
+   }
     
-    }
+    
     
     
     /** CAJA 3 - Fotos Principales **/
     
-    #carouselExampleControls {
-    
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin: 0px; 
-    width: 1000px;
-    height: 1000px;
+    #fotoprincipal {
+      margin: 0px 10px 0px 0px;
+      img {
+      width: 1450.1px;
+      height: 600px;
     }
-    
-
+  }
     
     /** CAJA 4 - Nav- Fotos que llevan a las secciones **/
     
     
     .caja-4 {
     margin: 70px;
-    display: flex;
-    justify-content: space-evenly;
+    @include organizacion-space;
     display: grid;
     grid-template-areas: 
     "subtitulo-1 subtitulo-1 subtitulo-1 subtitulo-1"
     "fotosporcategoria1 fotosporcategoria2 fotosporcategoria3 fotosporcategoria4"
-    "fotosporcategoria1 fotosporcategoria2 fotosporcategoria3 fotosporcategoria4"
-    ;
+    "fotosporcategoria1 fotosporcategoria2 fotosporcategoria3 fotosporcategoria4";
     
     }
     
     .subtitulo-1 {
     grid-area: subtitulo-1;
-    display: flex;
-    justify-content: center;
+    @include organizacion-basica;
     font-size: 30px;
     }
     
@@ -113,12 +106,18 @@
     
     }
     
-    .piccategoria img {
-    
-    width: 500px;
-    height: 500px;
-    margin: 40px;
-    
+    .piccategoria {
+
+      img { width: 500px;
+            height: 500px;
+            margin: 40px; 
+         }
+
+      a { text-decoration: none;
+        @include organizacion-basica;
+          color: $vinotinto;
+          font-weight: bold;
+         }
     }
     
     .navegador-2 {
@@ -130,26 +129,17 @@
     }
     
     
-    .piccategoria li a { 
-    
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    color: #3d0814;
-    font-weight: bold;}
-    
     
     
     
     /** CAJA 5 - NOVEDADES **/
     
     .caja-5 {
-    background-color: #e6e6e6;
+    background-color: $gris;
     display: grid;
     grid-template-areas: 
     "subtitulo-1"
-    "fotonovedades"
-    ;
+    "fotonovedades";
     justify-items: center;
     }
     
@@ -170,48 +160,52 @@
     
     
     
-    .caja-6 .subtitulo-1 {
-    display: flex;
-    justify-content: center;
+    .caja-6 {
+
+      .subtitulo-1 {
+         @include organizacion-basica;
+
+         }
+
+         img {
+            width: 400px;
+            height: 400px;
+            }
     }
     
+    
+    
     #fotosrecomendado {
-    display: flex;
-    justify-content: space-evenly;
+      @include organizacion-space;
     flex-wrap: wrap;
     margin: 40px;
     
     }
     
-    .caja-6  img {
-    width: 400px;
-    height: 400px;
     
-    }
     
     /** CAJA 7 - VISTO RECIENTEMENTE **/
     
     .caja-7 {
-    background-color:#e6e6e6;
-    margin: 30px 0px;
-    
+     background-color:$gris;
+     margin: 30px 0px;
+
+     .subtitulo-1 {
+      @include organizacion-basica;
+
+      }
+
+      img {
+         width: 400px;
+         height: 400px;
+         }
     }
     
-    .caja-7 .subtitulo-1 {
-    display: flex;
-    justify-content: center;
-    }
+    
     
     #fotosvistos {
-    display: flex;
-    justify-content: space-evenly;
+    @include organizacion-space;
     flex-wrap: wrap;
-    }
-    
-    .caja-7  img {
-    width: 400px;
-    height: 400px;
-    padding: 40PX;
     }
     
     
@@ -219,26 +213,28 @@
     
     #caja-8 {
     
-    background-color: #3d0814;
-    border: solid 45px #3d0814;
+    background-color: $vinotinto;
+    border: solid 45px $vinotinto;
     color: beige;
     margin: 30px 0px;
-    display: flex;
-    justify-content: space-evenly;
+    @include organizacion-space;
     
+      #botonregistro{
+        background-color: #fdf5e6; 
+        border: solid 30px #fdf5e6;
+        color:$negro;
+        justify-content: end;
+        border-radius: 20px;
+        transition: all 2s ease-in-out;
     }
+   }
     
-    
-    
-    #caja-8 #botonregistro{
-    background-color: #fdf5e6; 
-    border: solid 30px #fdf5e6;
-    color: black;
-    justify-content: end;
-    border-radius: 20px;
-    transition: all 2s ease-in-out;
-    }
-    
+        
+    #caja-8 {
+       #botonregistro:hover {
+    transform: scale(1.1,1.1);
+     }
+   }
     
     
     
@@ -251,21 +247,17 @@
     /** CAJA 9 - NAV-Final de Página **/
     .caja-9 {
     
-    
-    display: flex; 
-    justify-content: center;
+      @include organizacion-basica;
     margin: 0px;
     padding: 20px;
-    
-    
     }
     
     /** CAJA 10 - Derechos reservados **/
     
     .caja-10 {
     
-    display: flex;
-    justify-content: center;
+      @include organizacion-basica;
+
     
     
     
