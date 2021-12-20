@@ -10,9 +10,14 @@
 
       <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
 
+      <!--animates.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
        <!--Bootstrap-->
         
        <link rel="stylesheet" href="css/bootstrap.css">
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+       
        
        
        <!--Mi CSS-->
@@ -46,7 +51,7 @@
 
         <body>
        
-       <!--(CAJA 2) Navegador -->
+       <!-- Navegador -->
     <nav> 
 
        
@@ -90,14 +95,14 @@
            
         <main>
 
-    <!-- (CAJA 3) Acá va el conjunto de fotos pricipales -->
+    <!--  Acá va el conjunto de fotos pricipales -->
 
 <section id="fotonu">
 
 <img src="multimedia/principal/pic-principal.jpg" alt="Foto Principal mujer camisa floral roja">
 </section>
 
-    <!-- (CAJA 4) fotos por secciones- Acá va fotos divididas por productos -->
+    <!--  fotos por secciones- Acá va fotos divididas por productos -->
 
     <section class="caja-4">
 
@@ -153,7 +158,7 @@
        </main>
 </header>
 
-    <!-- (CAJA 5) NOVEDADES - Acá va las nuevas colecciones-->
+    <!--  NOVEDADES - Acá va las nuevas colecciones-->
 
       <div class="caja-5">
 
@@ -171,7 +176,7 @@
        </div>
 
 
-    <!-- (CAJA 6) Productos en categorias o estilos que ya le han gustado o comprado-->
+    <!--  Productos en categorias o estilos que ya le han gustado o comprado-->
        
       <div class="caja-6">
 
@@ -221,10 +226,24 @@
     
     </div>  
 
+<!--  Suscripción NEWSLETTER-->
 
+<section id="caja-8">
+
+    <div id="titulo-dos">
+        <h3>SUSCRÍBETE AL NEWSLETTER </h3>
+    </div>
+     
+      <div id="botonregistro">
+          <span> <a href="formulario.html" target="_blank"><h4>REGÍSTRATE GRATIS</h4></a></span>
+  
+      </div>
+    
+  
+    </section>
     
 
-    <!-- (CAJA 7) Acá va los productos vistos pero no agregados al carrito ni al wishlist-->
+    <!-- Acá va los productos vistos pero no agregados al carrito ni al wishlist-->
         
     <div class="caja-7">
 
@@ -263,57 +282,83 @@
         <div class="picvisto  visto3">
 
            
-            <img src="multimedia/faldas/print.2.jpg" class="card-img-top" alt="Falda Animal Print larga con apertura">
+            <img src="multimedia/vestido/largo.2.jpg" alt="Vestido Largo Rojo con apertura">
     
             <li class="navegador-2">
-                <h5>Falda Animal Print</h5>
-                <a href="faldas.html#faldaprint">Ir</a>
+                <h5>Vestido Rojo</h5>
+                <a href="vestidos.html#vestidoelegante">Ir</a>
             </li>
     
         </div>
     
     </div>  
            
- <!-- (CAJA 8) Suscripción NEWSLETTER-->
-
- <section id="caja-8">
-
-  <div id="titulo-dos">
-      <h3>SUSCRÍBETE AL NEWSLETTER </h3>
-  </div>
-   
-    <div id="botonregistro">
-        <span> <a href="formulario.html"><h4>REGÍSTRATE GRATIS</h4></a></span>
-
-    </div>
+ 
   
-  </section>
-  
+  <!-- SOBRE NOSOTROS-->
 
-<!--Esto no va aca pero mientras lo ubico lo pondré aquí-->
+    <div id="nosotros">
+       
+    <h3 > SOBRE NOSOTROS </h3>
 
-<section id="compras">
-<h4>Como comprar</h4>
-        <ul>
-            <li class="pasos-compra"> Agrega al carrito de compras los productos que deseas</li>
-            <li class="pasos-compra">Elije el medio de pago</li>
-            <li class="pasos-compra">Agrega al formulario toda tu información y la dirección donde quieres que llegue tu compra</li>
-            <li class="pasos-compra">Recibe tu pedido en el tiempo de entrega estipulado</li>
-            <li class="pasos-compra">!Disfruta tus productos!</li>
-            
-        </ul>
+            <P>Nurbanu es un emprendimiento que nació en la ciudad de Medellín, buscando crear estilos y prendas que permitan empoderar a las mujeres, Creemos que el motor más grande de transformación es el amor propio.  <br> una marca elaborada <strong>100% en Colombia</strong>, contribuyendo al empleo y vida de muchas familias Colombianas, somo fieles creyentes en que la unión y crecimiento como sociedad empieza por creer y fomentar el talento del país. 
+             </P>
 
-    </section>
-        
+             <h5>Conoce nuestras políticas</h5>
 
-            
-            
+            <a href="comprar.html#devoluciones" target="_blank"> Has clic acá para conocer las política de envió y devoluciones</a>
 
-        
-    
-            <footer>
+          <h5 id="tallas"> Guía de Tallas  </h5>
 
-                <!-- (CAJA 9) NAV-FINAL DE PÁGINA-->
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Talla</th>
+                    <th scope="col">Pecho</th>
+                    <th scope="col">Cintura</th>
+                    <th scope="col">Cadera</th>
+                  
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">XS</th>
+                    <td>45-47</td>
+                    <td>60-64</td>
+                    <td>90-95</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">S</th>
+                    <td>48-50</td>
+                    <td>65-70</td>
+                    <td>96-100</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">M</th>
+                    <td>51-53</td>
+                    <td>71-76</td>
+                    <td>101-106</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">L</th>
+                    <td>54-56</td>
+                    <td>77-80</td>
+                    <td>107-113</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">XL</th>
+                    <td>57-59</td>
+                    <td>81-84</td>
+                    <td>114-118</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <P> <strong>Nota:</strong> Tenga en cuenta que las mediciones son en centímetros (cm)</P>
+            </div>
+
+                <!--  NAV-FINAL DE PÁGINA-->
+                <footer>
        <div class="caja-9">
 
                 <span class="c9">ACERCA DE NOSOTROS</span>
@@ -325,7 +370,7 @@
 
        <hr/>
 
-             <!-- (CAJA 10) última parte (derechos reservados)-->
+             <!-- última parte (derechos reservados)-->
 
              <div class="caja-10">
 
@@ -341,8 +386,11 @@
 
 
       <script src= "js/bootstrap.js"></script>
+
+      <!-- boton de whatsap
+      <a href="https://wa.me/+573054518049?text=Me%20gustaría%20saber%20el%20precio%20del%20coche" class="whatsapp support animate_animated animatebounceInLeft animate_delay-3s" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"><img src="./multimedia/principal/whatsapp.png" alt=""></i></a>
        
-        
+         -->
         </body>
     
 

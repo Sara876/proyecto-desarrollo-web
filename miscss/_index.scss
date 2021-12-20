@@ -16,7 +16,9 @@
     .gris {
     border: solid 30px $gris;
     }
-      
+    body  {
+      h3 { font-weight: bold; }
+    }
     
     /** Principio de página **/
     
@@ -27,7 +29,7 @@
     
     
     .caja-2 { 
-    background-color: #e8dbc5;
+    background-color: $pastel;
     margin: 0%;
     border: 0px;
     display: flex;
@@ -79,7 +81,7 @@
     
     
     
-    /** CAJA 3 - Foto Principal **/
+    /**  Foto Principal **/
     
     #fotonu {
        text-align: center;
@@ -91,7 +93,7 @@
     }
   }
     
-    /** CAJA 4 - Nav- Fotos que llevan a las secciones **/
+    /**  Fotos que llevan a las secciones **/
     
     
     .caja-4 {
@@ -145,29 +147,28 @@
           font-size: 1.5rem;
           transition: all 0s ease-in ;
          }
+         a:hover {color: $vinotinto;
+          font-size: 1.55rem;
+  
+  
+        }
     }
     
 
-    .piccategoria{
-      a:hover {color: $vinotinto;
-        font-size: 1.55rem;
-
-
-      }
-    }
+  
     .navegador-2 {
     
-    margin: 12px;
-    list-style: none;
-    align-items: center;
-    
-    }
-    
-    
+      margin: 12px;
+      list-style: none;
+      align-items: center;
+      
+      }
     
     
     
-    /** CAJA 5 - NOVEDADES **/
+    
+    
+    /**  NOVEDADES **/
     
     .caja-5 {
     background-color: $gris;
@@ -199,7 +200,7 @@
     
     
     
-    /** CAJA 6 - RECOMENDADOS PARA TI**/
+    /** RECOMENDADOS PARA TI**/
     
   
 
@@ -279,15 +280,47 @@
         }
       }
      
+    /**  NEWSLETTER **/
     
+    #caja-8 {
     
-    /** CAJA 7 - VISTO RECIENTEMENTE **/
+      background-color: $vinotinto;
+      border: solid 45px $vinotinto;
+      color: beige;
+      margin: 0px 0px;
+      @include organizacion-space;
+      
+        #botonregistro{
+          background-color: #fdf5e6; 
+          border: solid 30px #fdf5e6;
+          color:$negro;
+          justify-content: end;
+          border-radius: 20px;
+          transition: all 2s ease-in-out;
+  
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+     }
+      
+     #formulario {
+      justify-content: center;
+      margin: 50px;}
+          
+      #caja-8 {
+         #botonregistro:hover {
+      transform: scale(1.1,1.1);
+       }
+     }
+    
+    /**  VISTO RECIENTEMENTE  **/
     
      
 .caja-7 {
-     background-color:$gris;
-      margin: 30px 0px;
-      display: flex;
+     background-color:white;
+      margin: 70px ;
       display: grid;
       grid-template-areas: 
       "subtitulo-1 subtitulo-1 subtitulo-1 "
@@ -297,13 +330,9 @@
       
       
       .subtitulo-1 {
-      grid-area: subtitulo-1;
-      background-color:$gris;
-      margin: 30px 0px;
-      @include organizacion-basica;
-      font-size: 30px;
-      margin: 0px;
-      height: 20px;
+        grid-area: subtitulo-1;
+        @include organizacion-basica;
+        font-size: 30px;  
       }
     }
       
@@ -325,8 +354,8 @@
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        margin: 0px;
-        position: relative;
+        transition: all 0s ease-in; 
+        
         
 
         img { width: 300px;
@@ -336,7 +365,7 @@
   
         h5 { text-decoration: none;
           @include organizacion-basica;
-            color: rgb(33, 5, 78);
+            color: rgb(163, 12, 12);
             font-weight: bold;
             font-size: 1.2rem;
             transition: all 1s ease-in ;
@@ -354,58 +383,40 @@
             width: 150px;
             margin: 30px;
            }
-      }
+          }
+     
       
+  .picvisto:hover {
+          border: solid 2px $pastel;
+          font-weight: bold;
+        
   
-      
-  
-        a:hover {color: $negro;
+        a:hover {color: rgb(12, 3, 61);
           font-size: 1.2rem;
           font-weight: bold;
         }
-      
+      }
      
     
     
-    /** CAJA 8 - NEWSLETTER **/
     
-    #caja-8 {
     
-    background-color: $vinotinto;
-    border: solid 45px $vinotinto;
-    color: beige;
-    margin: 30px 0px;
-    @include organizacion-space;
-    
-      #botonregistro{
-        background-color: #fdf5e6; 
-        border: solid 30px #fdf5e6;
-        color:$negro;
-        justify-content: end;
-        border-radius: 20px;
-        transition: all 2s ease-in-out;
+ /******   NOSOTROS *****/       
+ #nosotros {
+  justify-content: center;
+  margin: 0%;
+  padding: 60px;
+  background-color: $gris;
 
-      a {
-        text-decoration: none;
-        color: black;
-      }
+  h3{
+     color: rgb(32, 8, 77);
+     @include organizacion-basica;
+     font-weight: bold;
+     font-size: 1.9rem;
+          
     }
-   }
-    
-   #formulario {
-    justify-content: center;
-    margin: 50px;
 
-
-}
-        
-    #caja-8 {
-       #botonregistro:hover {
-    transform: scale(1.1,1.1);
-     }
-   }
-    
-    
+  }
     
     /** PIE DE PÁGINA **/
     
@@ -413,7 +424,7 @@
     background-color: #696d7d;
     }
     
-    /** CAJA 9 - NAV-Final de Página **/
+    /**  NAV-Final de Página **/
     .caja-9 {
     
       @include organizacion-basica;
@@ -421,7 +432,7 @@
     padding: 20px;
     }
     
-    /** CAJA 10 - Derechos reservados **/
+    /**  Derechos reservados **/
     
     .caja-10 {
     

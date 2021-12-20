@@ -11,6 +11,9 @@
 .gris {
   border: solid 30px #e6e6e6; }
 
+body h3 {
+  font-weight: bold; }
+
 /** Principio de página **/
 .caja-1 {
   display: flex;
@@ -45,7 +48,7 @@ nav a {
 nav a:hover {
   text-decoration-line: underline; }
 
-/** CAJA 3 - Foto Principal **/
+/**  Foto Principal **/
 #fotonu {
   text-align: center;
   display: flex;
@@ -56,7 +59,7 @@ nav a:hover {
     width: 1580px;
     height: 600px; }
 
-/** CAJA 4 - Nav- Fotos que llevan a las secciones **/
+/**  Fotos que llevan a las secciones **/
 .caja-4 {
   margin: 70px;
   display: flex;
@@ -105,7 +108,7 @@ nav a:hover {
   list-style: none;
   align-items: center; }
 
-/** CAJA 5 - NOVEDADES **/
+/**  NOVEDADES **/
 .caja-5 {
   background-color: #e6e6e6;
   display: grid;
@@ -122,7 +125,7 @@ nav a:hover {
       height: 600px;
       padding: 20px; }
 
-/** CAJA 6 - RECOMENDADOS PARA TI**/
+/** RECOMENDADOS PARA TI**/
 .caja-6 {
   margin: 70px;
   display: flex;
@@ -182,74 +185,12 @@ nav a:hover {
     color: black;
     font-size: 1.2rem; }
 
-/** CAJA 7 - VISTO RECIENTEMENTE **/
-.caja-7 {
-  background-color: #e6e6e6;
-  margin: 30px 0px;
-  display: flex;
-  display: grid;
-  grid-template-areas: "subtitulo-1 subtitulo-1 subtitulo-1 " "visto1 visto2 visto3 " "visto1 visto2 visto3 "; }
-  .caja-7 .subtitulo-1 {
-    grid-area: subtitulo-1;
-    background-color: #e6e6e6;
-    margin: 30px 0px;
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-    margin: 0px;
-    height: 20px; }
-
-.visto1 {
-  grid-area: visto1; }
-
-.visto2 {
-  grid-area: visto2; }
-
-.visto3 {
-  grid-area: visto3; }
-
-.picvisto {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  margin: 0px;
-  position: relative; }
-  .picvisto img {
-    width: 300px;
-    height: 300px;
-    margin: 40px; }
-  .picvisto h5 {
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    color: #21054e;
-    font-weight: bold;
-    font-size: 1.2rem;
-    transition: all 1s ease-in; }
-  .picvisto a {
-    text-decoration: none;
-    color: black;
-    display: flex;
-    justify-content: center;
-    transition: all 0s ease-in;
-    border-radius: 20px;
-    background-color: white;
-    border: solid 1.7px black;
-    justify-content: space-evenly;
-    width: 150px;
-    margin: 30px; }
-
-a:hover {
-  color: black;
-  font-size: 1.2rem;
-  font-weight: bold; }
-
-/** CAJA 8 - NEWSLETTER **/
+/**  NEWSLETTER **/
 #caja-8 {
   background-color: #410602;
   border: solid 45px #410602;
   color: beige;
-  margin: 30px 0px;
+  margin: 0px 0px;
   display: flex;
   justify-content: space-evenly; }
   #caja-8 #botonregistro {
@@ -270,18 +211,90 @@ a:hover {
 #caja-8 #botonregistro:hover {
   transform: scale(1.1, 1.1); }
 
+/**  VISTO RECIENTEMENTE  **/
+.caja-7 {
+  background-color: white;
+  margin: 70px;
+  display: grid;
+  grid-template-areas: "subtitulo-1 subtitulo-1 subtitulo-1 " "visto1 visto2 visto3 " "visto1 visto2 visto3 "; }
+  .caja-7 .subtitulo-1 {
+    grid-area: subtitulo-1;
+    display: flex;
+    justify-content: center;
+    font-size: 30px; }
+
+.visto1 {
+  grid-area: visto1; }
+
+.visto2 {
+  grid-area: visto2; }
+
+.visto3 {
+  grid-area: visto3; }
+
+.picvisto {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  transition: all 0s ease-in; }
+  .picvisto img {
+    width: 300px;
+    height: 300px;
+    margin: 40px; }
+  .picvisto h5 {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: #a30c0c;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all 1s ease-in; }
+  .picvisto a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    transition: all 0s ease-in;
+    border-radius: 20px;
+    background-color: white;
+    border: solid 1.7px black;
+    justify-content: space-evenly;
+    width: 150px;
+    margin: 30px; }
+
+.picvisto:hover {
+  border: solid 2px #e8dbc5;
+  font-weight: bold; }
+  .picvisto:hover a:hover {
+    color: #0c033d;
+    font-size: 1.2rem;
+    font-weight: bold; }
+
+/******   NOSOTROS *****/
+#nosotros {
+  justify-content: center;
+  margin: 0%;
+  padding: 60px;
+  background-color: #e6e6e6; }
+  #nosotros h3 {
+    color: #20084d;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.9rem; }
+
 /** PIE DE PÁGINA **/
 footer {
   background-color: #696d7d; }
 
-/** CAJA 9 - NAV-Final de Página **/
+/**  NAV-Final de Página **/
 .caja-9 {
   display: flex;
   justify-content: center;
   margin: 0px;
   padding: 20px; }
 
-/** CAJA 10 - Derechos reservados **/
+/**  Derechos reservados **/
 .caja-10 {
   display: flex;
   justify-content: center; }
@@ -344,3 +357,19 @@ footer {
   justify-content: space-evenly;
   display: grid;
   grid-template-areas: "titulo-2 titulo-2 titulo-2 " "fotosproducto1 fotosproducto2 fotosproducto3" "fotosproducto1 fotosproducto2 fotosproducto3"; }
+
+.whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100; }
+
+/****** CARRITO DE COMPRAS*****/
+#formulario {
+  justify-content: center;
+  margin: 50px; }

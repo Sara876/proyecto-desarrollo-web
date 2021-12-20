@@ -74,7 +74,22 @@
      grid-template-areas: "titulo-2 titulo-2 titulo-2 "
     "fotosproducto1 fotosproducto2 fotosproducto3"
     "fotosproducto1 fotosproducto2 fotosproducto3"; }
+
+    .whatsapp {
+      position:fixed;
+      width:60px;
+      height:60px;
+      bottom:40px;
+      right:40px;
+      border-radius:50px;
+      text-align:center;
+      font-size:30px;
+      z-index:100;
+    }
  
+ /****** CARRITO DE COMPRAS*****/       
   
 
-   
+    #formulario {
+      justify-content: center;
+      margin: 50px;}
