@@ -37,7 +37,7 @@
       text-decoration: none;
       color: $negro;
       @include organizacion-basica;
-      transition: all 0.6s ease-in;
+      transition: all 0.5s ease-in;
       border-radius: 20px;
       background-color: $blanco;
       border: solid 1.7px $negro;
@@ -90,6 +90,56 @@
  /****** CARRITO DE COMPRAS*****/       
   
 
-    #formulario {
-      justify-content: center;
-      margin: 50px;}
+    #compras {
+      background-color: #fbf1e9;
+      margin: 70px 110px;
+
+      h3 { 
+      color:$rojo;
+        @include organizacion-basica;
+        font-weight: bold;
+        font-size: 1.7rem;
+        justify-content: center;
+      }
+
+      h5 {color:$rojo;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 50px 20px 25px;
+
+      }
+
+      h6 {
+        font-size: 1rem;
+        margin: 20px;
+
+      }
+
+      
+
+      ul {
+        margin: 20px;
+        font-size: 1.1rem;
+
+        li {
+          margin: 7px;
+        }
+
+        a { color: $negro;
+          transition: all 0s ease-in;
+        }
+
+        a:hover { color:rgb(44, 24, 155);
+        }
+      }
+
+      #devoluciones {
+        margin: 70px 20px 25px;
+      }
+      
+      .accordion-body {font-size: 1rem;
+
+      }
+        
+  }
+    

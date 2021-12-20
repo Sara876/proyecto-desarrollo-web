@@ -286,7 +286,7 @@
     
       background-color: $vinotinto;
       border: solid 45px $vinotinto;
-      color: beige;
+      color: $pastel;
       margin: 0px 0px;
       @include organizacion-space;
       
@@ -302,18 +302,33 @@
           text-decoration: none;
           color: black;
         }
-      }
-     }
       
+      }
+      #botonregistro:hover {
+        transform: scale(1.1,1.1);
+         }
+     }
+
+    
+
+    /** Fromulario- NEWSLETTER **/
+     
+      
+     #bodyformulario { background-color: #fbf1e9;
+
+      h3{
+        color:$rojo;
+        @include organizacion-basica;
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin: 30px;
+       }
      #formulario {
       justify-content: center;
-      margin: 50px;}
-          
-      #caja-8 {
-         #botonregistro:hover {
-      transform: scale(1.1,1.1);
-       }
+      margin: 50px;
      }
+    }
+      
     
     /**  VISTO RECIENTEMENTE  **/
     
@@ -391,13 +406,12 @@
           font-weight: bold;
         
   
-        a:hover {color: rgb(12, 3, 61);
+        a:hover {color:$morado;
           font-size: 1.2rem;
           font-weight: bold;
         }
       }
      
-    
     
     
     
@@ -407,16 +421,52 @@
   margin: 0%;
   padding: 60px;
   background-color: $gris;
-
+  
+  
   h3{
-     color: rgb(32, 8, 77);
+     color: $morado;
      @include organizacion-basica;
      font-weight: bold;
      font-size: 1.9rem;
-          
     }
 
-  }
+    p {font-size: 1.2rem;
+      margin: $margenp;
+      text-align: justify;
+      }
+
+    h5 { margin: $margenp;
+      color: $morado;
+      font-weight: bold;
+      text-align: left;
+      }
+
+      a {
+        font-size: 1.2rem;
+        margin: $margenp;
+        color:$negro;
+        transition: all 0s ease-in;
+      }
+
+      a:hover{
+        color: rgb(216, 103, 10);
+
+      }
+
+      .table {
+        margin: 40px 43px;
+        text-align: center;
+
+        th { font-size: 1.1rem;
+        }
+
+        td { font-size: 1.1rem;
+        }
+      }
+      
+    }
+
+      
     
     /** PIE DE PÁGINA **/
     

@@ -189,7 +189,7 @@ nav a:hover {
 #caja-8 {
   background-color: #410602;
   border: solid 45px #410602;
-  color: beige;
+  color: #e8dbc5;
   margin: 0px 0px;
   display: flex;
   justify-content: space-evenly; }
@@ -203,13 +203,22 @@ nav a:hover {
     #caja-8 #botonregistro a {
       text-decoration: none;
       color: black; }
+  #caja-8 #botonregistro:hover {
+    transform: scale(1.1, 1.1); }
 
-#formulario {
-  justify-content: center;
-  margin: 50px; }
-
-#caja-8 #botonregistro:hover {
-  transform: scale(1.1, 1.1); }
+/** Fromulario- NEWSLETTER **/
+#bodyformulario {
+  background-color: #fbf1e9; }
+  #bodyformulario h3 {
+    color: #790404;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 30px; }
+  #bodyformulario #formulario {
+    justify-content: center;
+    margin: 50px; }
 
 /**  VISTO RECIENTEMENTE  **/
 .caja-7 {
@@ -266,7 +275,7 @@ nav a:hover {
   border: solid 2px #e8dbc5;
   font-weight: bold; }
   .picvisto:hover a:hover {
-    color: #0c033d;
+    color: #20084d;
     font-size: 1.2rem;
     font-weight: bold; }
 
@@ -282,6 +291,29 @@ nav a:hover {
     justify-content: center;
     font-weight: bold;
     font-size: 1.9rem; }
+  #nosotros p {
+    font-size: 1.2rem;
+    margin: 40px;
+    text-align: justify; }
+  #nosotros h5 {
+    margin: 40px;
+    color: #20084d;
+    font-weight: bold;
+    text-align: left; }
+  #nosotros a {
+    font-size: 1.2rem;
+    margin: 40px;
+    color: black;
+    transition: all 0s ease-in; }
+  #nosotros a:hover {
+    color: #d8670a; }
+  #nosotros .table {
+    margin: 40px 43px;
+    text-align: center; }
+    #nosotros .table th {
+      font-size: 1.1rem; }
+    #nosotros .table td {
+      font-size: 1.1rem; }
 
 /** PIE DE PÁGINA **/
 footer {
@@ -328,7 +360,7 @@ footer {
     color: black;
     display: flex;
     justify-content: center;
-    transition: all 0.6s ease-in;
+    transition: all 0.5s ease-in;
     border-radius: 20px;
     background-color: white;
     border: solid 1.7px black;
@@ -370,6 +402,35 @@ footer {
   z-index: 100; }
 
 /****** CARRITO DE COMPRAS*****/
-#formulario {
-  justify-content: center;
-  margin: 50px; }
+#compras {
+  background-color: #fbf1e9;
+  margin: 70px 110px; }
+  #compras h3 {
+    color: #790404;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.7rem;
+    justify-content: center; }
+  #compras h5 {
+    color: #790404;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 50px 20px 25px; }
+  #compras h6 {
+    font-size: 1rem;
+    margin: 20px; }
+  #compras ul {
+    margin: 20px;
+    font-size: 1.1rem; }
+    #compras ul li {
+      margin: 7px; }
+    #compras ul a {
+      color: black;
+      transition: all 0s ease-in; }
+    #compras ul a:hover {
+      color: #2c189b; }
+  #compras #devoluciones {
+    margin: 70px 20px 25px; }
+  #compras .accordion-body {
+    font-size: 1rem; }
