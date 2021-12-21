@@ -103,43 +103,51 @@
       }
 
       h5 {color:$rojo;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         font-weight: bold;
         margin: 50px 20px 25px;
 
       }
 
       h6 {
-        font-size: 1rem;
+        font-size: 1.1rem;
         margin: 20px;
 
       }
 
-      
+    
+
 
       ul {
         margin: 20px;
-        font-size: 1.1rem;
+        
 
         li {
-          margin: 7px;
+          font-size: 1.1rem;
+          margin: px;
+        }
+
+        .pasoscompras {margin:10px;
         }
 
         a { color: $negro;
           transition: all 0s ease-in;
         }
 
-        a:hover { color:rgb(44, 24, 155);
+        a:hover { color:rgb(40, 20, 156);
         }
       }
+    
 
       #devoluciones {
         margin: 70px 20px 25px;
-      }
       
-      .accordion-body {font-size: 1rem;
+      
+      .accordion-body {font-size: 1.1rem;}
+
+      strong {font-size: 1.2rem;
 
       }
-        
+    }    
   }
     

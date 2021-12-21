@@ -295,15 +295,35 @@ nav a:hover {
     font-size: 1.2rem;
     margin: 40px;
     text-align: justify; }
+  #nosotros #link {
+    font-size: 1.2rem;
+    margin: 40px;
+    text-align: left; }
   #nosotros h5 {
+    margin: 40px 20px 10px;
+    color: #20084d;
+    font-weight: bold;
+    text-align: left; }
+  #nosotros h6 {
     margin: 40px;
     color: #20084d;
     font-weight: bold;
     text-align: left; }
+  #nosotros .contact {
+    font-size: 1rem;
+    margin: 40px;
+    text-align: justify; }
+  #nosotros #cajainfo {
+    display: table;
+    border-spacing: 10px; }
+    #nosotros #cajainfo .individual {
+      display: table-cell;
+      margin: 0px; }
   #nosotros a {
     font-size: 1.2rem;
-    margin: 40px;
+    margin: 20px;
     color: black;
+    text-align: left;
     transition: all 0s ease-in; }
   #nosotros a:hover {
     color: #d8670a; }
@@ -316,20 +336,40 @@ nav a:hover {
       font-size: 1.1rem; }
 
 /** PIE DE PÁGINA **/
-footer {
-  background-color: #696d7d; }
+.context-dark, .bg-gray-dark, .bg-primary {
+  color: rgba(255, 255, 255, 0.8); }
+  .context-dark .rights, .bg-gray-dark .rights, .bg-primary .rights {
+    display: block;
+    text-align: center; }
 
-/**  NAV-Final de Página **/
-.caja-9 {
-  display: flex;
-  justify-content: center;
-  margin: 0px;
-  padding: 20px; }
+.footer-classic a, .footer-classic a:focus, .footer-classic a:active {
+  color: #ffffff; }
 
-/**  Derechos reservados **/
-.caja-10 {
+.social-inner {
   display: flex;
-  justify-content: center; }
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 23px;
+  font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none; }
+
+.social-container .col {
+  border: 1px solid rgba(255, 255, 255, 0.1); }
+
+.nav-list li a:before {
+  content: "\f14f";
+  font: 400 21px/1 "Material Design Icons";
+  color: #4d6de6;
+  display: inline-block;
+  vertical-align: baseline;
+  margin-left: -28px;
+  margin-right: 7px;
+  opacity: 0;
+  visibility: hidden;
+  transition: .22s ease; }
 
 /****** PAGUINAS: ACCESORIOS + TOPS + FALDAS + VESTIDOS*****/
 .titulos-pag-nav {
@@ -414,23 +454,27 @@ footer {
     justify-content: center; }
   #compras h5 {
     color: #790404;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: bold;
     margin: 50px 20px 25px; }
   #compras h6 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin: 20px; }
   #compras ul {
-    margin: 20px;
-    font-size: 1.1rem; }
+    margin: 20px; }
     #compras ul li {
-      margin: 7px; }
+      font-size: 1.1rem;
+      margin: px; }
+    #compras ul .pasoscompras {
+      margin: 10px; }
     #compras ul a {
       color: black;
       transition: all 0s ease-in; }
     #compras ul a:hover {
-      color: #2c189b; }
+      color: #28149c; }
   #compras #devoluciones {
     margin: 70px 20px 25px; }
-  #compras .accordion-body {
-    font-size: 1rem; }
+    #compras #devoluciones .accordion-body {
+      font-size: 1.1rem; }
+    #compras #devoluciones strong {
+      font-size: 1.2rem; }

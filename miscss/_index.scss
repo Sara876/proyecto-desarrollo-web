@@ -429,22 +429,54 @@
      font-weight: bold;
      font-size: 1.9rem;
     }
+ 
 
     p {font-size: 1.2rem;
       margin: $margenp;
       text-align: justify;
       }
 
-    h5 { margin: $margenp;
+    #link { font-size: 1.2rem;
+      margin: $margenp;
+      text-align: left;
+
+      }
+
+    h5 { margin:40px 20px 10px;
       color: $morado;
       font-weight: bold;
       text-align: left;
       }
 
+      h6{
+      margin: $margenp;
+      color: $morado;
+      font-weight: bold;
+      text-align: left;
+       }
+
+       .contact {
+        font-size: 1rem;
+        margin: $margenp;
+        text-align: justify;
+       }
+
+       #cajainfo
+       {display: table;
+        border-spacing: 10px;
+
+        .individual {
+          display: table-cell;
+          margin: 0px;
+
+        }
+         
+       }
       a {
         font-size: 1.2rem;
-        margin: $margenp;
+        margin: 20px;
         color:$negro;
+        text-align: left;
         transition: all 0s ease-in;
       }
 
@@ -463,6 +495,7 @@
         td { font-size: 1.1rem;
         }
       }
+
       
     }
 
@@ -470,28 +503,51 @@
     
     /** PIE DE PÁGINA **/
     
-    footer {
-    background-color: #696d7d;
-    }
-    
-    /**  NAV-Final de Página **/
-    .caja-9 {
-    
-      @include organizacion-basica;
-    margin: 0px;
-    padding: 20px;
-    }
-    
-    /**  Derechos reservados **/
-    
-    .caja-10 {
-    
-      @include organizacion-basica;
 
-    
-    
-    
-    }
-    
+    .context-dark, .bg-gray-dark, .bg-primary {
+      color: rgba(255, 255, 255, 0.8);
+      
+
+      .rights {
+        display: block;
+        text-align: center;
+      }
+      
+  }
+  
+  .footer-classic a, .footer-classic a:focus, .footer-classic a:active {
+      color: #ffffff;
+  }
+  
+  
+  .social-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding: 23px;
+      font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.5);
+      text-decoration: none;
+  }
+  .social-container .col {
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      .letra {
+        
+      }
+  }
+  .nav-list li a:before {
+      content: "\f14f";
+      font: 400 21px/1 "Material Design Icons";
+      color: #4d6de6;
+      display: inline-block;
+      vertical-align: baseline;
+      margin-left: -28px;
+      margin-right: 7px;
+      opacity: 0;
+      visibility: hidden;
+      transition: .22s ease;
+  }
     
     
