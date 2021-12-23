@@ -39,10 +39,15 @@ body {
     display: flex;
     justify-content:center;
 
+    li {
+
     @media (max-width:768px) {
       display: flex;
-      display: inline-block;
-      }
+      flex-wrap: wrap;
+      flex-direction: column; 
+      justify-content: left;}
+
+    }
 
 
       }
@@ -51,6 +56,9 @@ body {
     .piclogo {
       padding: 0px;
       border: 10px;
+
+  
+      
       
       img {
         width: 120px;}

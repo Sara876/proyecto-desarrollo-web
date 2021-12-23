@@ -30,9 +30,11 @@ body h3 {
   display: flex;
   justify-content: center; }
   @media (max-width: 768px) {
-    .caja-2 {
+    .caja-2 li {
       display: flex;
-      display: inline-block; } }
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: left; } }
 
 .piclogo {
   padding: 0px;
