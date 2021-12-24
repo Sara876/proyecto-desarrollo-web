@@ -72,12 +72,6 @@ body {
         }
 
 
-       
-
-   
-  
-    
-    
     
     nav {
        a {
@@ -245,7 +239,7 @@ body {
       padding: 15px;
         }
     }
-    }
+  }
 
   }
     
@@ -369,12 +363,7 @@ body {
           margin: 20px;
 
           @media (max-width:425px)  {
-            margin: 10px;
-}
-
-
-
-
+            margin: 10px;}
       }
       
         #botonregistro{
@@ -393,9 +382,7 @@ body {
         a {
           text-decoration: none;
           color: black;
-
-                }
-      
+         }
       }
       #botonregistro:hover {
         transform: scale(1.1,1.1);
@@ -577,8 +564,8 @@ body {
         text-align: justify;
        }
 
-       #cajainfo
-       {display: table;
+       #cajainfo {
+        display: table;
         border-spacing: 10px;
 
         @media (max-width:425px) {
@@ -591,6 +578,7 @@ body {
           margin: 0px; }
          
        }
+
       a {
         font-size: 1.2rem;
         margin: 20px;
@@ -615,10 +603,9 @@ body {
         }
 
         td { font-size: 1.1rem;
+        
         }
       }
-
-      
     }
 
       
